@@ -241,7 +241,7 @@
     border-radius: 50%;
     border: 3px solid var(--color-white); }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.15rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: var(--color-white);
@@ -376,6 +376,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -391,6 +394,11 @@ body {
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   font-size: 1.4rem;
@@ -403,6 +411,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
